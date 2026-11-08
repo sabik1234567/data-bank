@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neina - Website Keren</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+  body { background:linear-gradient(135deg,#ff6b9d,#a855f7,#3b82f6); min-height:100vh; color:white; }
+  nav { display:flex; justify-content:space-between; padding:20px 40px; }
+  .logo { font-size:26px; font-weight:800; } .logo span{color:#ffe066;}
+  nav a{color:white; text-decoration:none; margin-left:20px; font-weight:600;}
+  .hero{ text-align:center; padding:60px 20px 40px; }
+  .hero h1{ font-size:52px; line-height:1.1; }
+  .hero h1 span{ color:#ffe066; }
+  .hero p{ margin:20px auto; max-width:500px; opacity:.9; font-size:18px; }
+  .btn-group{ display:flex; gap:15px; justify-content:center; flex-wrap:wrap; margin-top:25px; }
+  .btn{ padding:14px 28px; border-radius:50px; border:none; font-size:16px; font-weight:700; cursor:pointer; }
+  .btn-pink{ background:white; color:#ec4899; }
+  .btn-ghost{ background:rgba(255,255,255,.2); color:white; border:1px solid rgba(255,255,255,.5); }
+  .cards{ display:flex; gap:20px; justify-content:center; flex-wrap:wrap; padding:40px 20px; }
+  .card{ background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); border-radius:20px; padding:25px; width:280px; }
+  .card h3{ font-size:22px; margin-bottom:10px; } .card p{ opacity:.85; font-size:14px; line-height:1.6; }
+  .card .emoji{ font-size:40px; display:block; margin-bottom:12px; }
+  footer{ text-align:center; padding:20px; opacity:.7; font-size:14px; }
+  @media(max-width:600px){ .hero h1{font-size:36px;} }
+</style>
+</head>
+<body>
+<nav><div class="logo">NEINA<span>.</span></div><div><a href="#">Home</a><a href="#">Tentang</a><a href="#">Kontak</a></div></nav>
+<div class="hero">
+  <h1>Halo, Aku <span>Neina</span><br>Bikin Website Keren ✨</h1>
+  <p>Selamat datang di website pertamaku! Dibuat dari nol pakai GitHub Pages. Simple, cepat, dan gratis!</p>
+  <div class="btn-group">
+    <button class="btn btn-pink" onclick="alert('Makasih udah mampir! ❤️')">Lihat Karya Aku →</button>
+    <button class="btn btn-ghost" onclick="window.open('https://wa.me/6281234567890')">Chat WhatsApp</button>
+  </div>
+</div>
+<div class="cards">
+  <div class="card"><span class="emoji">🎨</span><h3>Desain Cantik</h3><p>Warna gradient pink-ungu-biru yang lagi tren dan enak dilihat.</p></div>
+  <div class="card"><span class="emoji">⚡</span><h3>Super Cepat</h3><p>Langsung kebuka dalam 1 detik karena di-host di GitHub Pages.</p></div>
+  <div class="card"><span class="emoji">📱</span><h3>HP Friendly</h3><p>Dibuka di HP, laptop, atau tablet tetap rapi dan keren.</p></div>
+</div>
+<footer>Made with ❤️ sabik • 2026</footer>
+</body>
+</html>
