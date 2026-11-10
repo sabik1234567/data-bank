@@ -3,72 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SABIK - IT Expert | Web Developer</title>
+<title>Buat Nda ❤️ - Perempuanku</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-body{background:#0a0a12;color:#eee;line-height:1.8}
-a{text-decoration:none;color:white}
-.header{background:linear-gradient(135deg,#0f0f0f,#1a1a2e,#16213e,#0f3460);padding:60px 20px;text-align:center}
-.foto{width:170px;height:170px;object-fit:cover;border-radius:50%;border:4px solid #00ff88;box-shadow:0 0 35px #00ff88}
-.badge{display:inline-block;background:#00ff88;color:#000;padding:7px 18px;border-radius:20px;font-weight:bold;font-size:13px;margin-top:15px}
-h1{font-size:34px;margin-top:15px} h1 span{color:#00ff88}
-.sub{color:#bbb;margin-top:5px}
-.btn{display:inline-block;margin:20px 8px 0;padding:14px 28px;border-radius:50px;font-weight:bold}
-.btn-hijau{background:#00ff88;color:#000} .btn-putih{border:1px solid #fff}
-.container{max-width:850px;margin:auto;padding:30px 20px}
-h2{font-size:24px;margin:45px 0 18px;border-left:5px solid #00ff88;padding-left:14px} h2 span{color:#00ff88}
-h3{color:#00ff88;margin:20px 0 8px}
-.card{background:#1a1a2e;border:1px solid #333;border-radius:20px;padding:25px;margin-bottom:18px}
-.bar{background:#333;height:11px;border-radius:10px;margin:8px 0 16px;overflow:hidden} .bar div{height:100%;background:linear-gradient(90deg,#00ff88,#00c6ff)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:550px){.grid{grid-template-columns:1fr} h1{font-size:27px}}
-.footer{text-align:center;color:#888;font-size:13px;padding:35px 20px;border-top:1px solid #222}
-.quote{background:#0a0a12;padding:20px;border-radius:15px;text-align:center;margin-top:20px;border:1px solid #00ff88}
-.tag{display:inline-block;background:#00ff88;color:#000;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:bold}
+body{background:linear-gradient(135deg,#ff9a9e,#fecfef,#ffdde1,#ff8fab);min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;overflow:hidden}
+.card{background:white;padding:35px 25px;border-radius:30px;box-shadow:0 20px 50px rgba(0,0,0,0.25);max-width:450px;width:100%;position:relative;z-index:10}
+h1{font-size:28px;margin:15px 0 10px;color:#ff4d6d;line-height:1.3}
+p{color:#555;line-height:1.7}
+.btn{border:none;padding:16px 32px;border-radius:50px;font-weight:bold;font-size:18px;cursor:pointer;margin:10px}
+#yes{background:#ff4d6d;color:white;box-shadow:0 5px 15px #ff4d6d88;animation:goyang 1s infinite}
+#no{background:#eee;color:#333;position:relative}
+#hasil{display:none}
+.hati-besar{font-size:90px;animation:degup 0.8s infinite;display:inline-block}
+@keyframes degup{0%,100%{transform:scale(1)}50%{transform:scale(1.3) rotate(-8deg)}}
+@keyframes goyang{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes terbang{0%{transform:translateY(100vh) rotate(0deg);opacity:1}100%{transform:translateY(-100px) rotate(360deg);opacity:0}}
+@keyframes melayang{0%,100%{transform:translateY(0) rotate(-10deg)}50%{transform:translateY(-15px) rotate(10deg)}}
+@keyframes kedip{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.3);opacity:0.7}}
+@keyframes gempa{0%,100%{transform:translate(0,0) rotate(0deg)}10%{transform:translate(-10px,5px) rotate(-2deg)}20%{transform:translate(10px,-5px) rotate(2deg)}30%{transform:translate(-12px,-8px) rotate(-3deg)}40%{transform:translate(12px,8px) rotate(3deg)}50%{transform:translate(-10px,5px) rotate(-2deg)}60%{transform:translate(10px,-5px) rotate(2deg)}70%{transform:translate(-8px,-5px) rotate(-1deg)}80%{transform:translate(8px,5px) rotate(1deg)}90%{transform:translate(-5px,2px) rotate(0deg)}}
+.goyang-heboh{animation:gempa 0.8s ease-in-out 3 !important}
+@keyframes geter-kartu{0%,100%{transform:scale(1) rotate(0deg)}25%{transform:scale(1.05) rotate(-3deg)}50%{transform:scale(1.08) rotate(3deg)}75%{transform:scale(1.05) rotate(-2deg)}}
+.geter{animation:geter-kartu 0.4s ease-in-out 6 !important}
+.hati-bg{position:fixed;top:100%;z-index:1;animation:terbang linear infinite;pointer-events:none}
+.stiker{position:absolute;font-size:30px;animation:melayang 2s infinite;z-index:11}
+.stiker1{top:-15px;left:-10px}
+.stiker2{top:-15px;right:-10px;animation-delay:0.5s}
+.stiker3{bottom:-15px;left:20px;animation-delay:0.3s}
+.stiker4{bottom:-15px;right:20px;animation-delay:0.8s}
+.tombol-musik{background:#ffe3ec;color:#ff4d6d;border:2px solid #ff4d6d;padding:12px 20px;border-radius:50px;font-weight:bold;cursor:pointer;margin-bottom:10px;width:100%}
+.tombol-musik.muter{animation:degup 0.8s infinite}
+.lirik{font-style:italic;color:#ff4d6d;font-size:14px;margin:10px 0}
 </style>
 </head>
-<body>
-<div class="header">
-  <img src="IMG_1736.jpeg" class="foto">
-  <br><div class="badge">✅ IT EXPERT • WEB DEVELOPER • TECH SPECIALIST</div>
-  <h1>Halo, Saya <span>SABIK</span></h1>
-  <p class="sub">Ahli Teknologi Informasi | Web Developer | Problem Solver<br>Banyuresmi - Garut, Jawa Barat, Indonesia<br>📱 WA: 0831-9676-8527</p>
-  <a class="btn btn-hijau" href="https://wa.me/6283196768527">💬 Hubungi Saya</a>
-  <a class="btn btn-putih" href="https://instagram.com/saiddulhikamassabyq.id">📸 Instagram</a>
+<body id="body">
+<audio id="lagu" loop preload="auto">
+<source src="perempuanku.mp3" type="audio/mpeg">
+<source src="lagu.mp3" type="audio/mpeg">
+</audio>
+<span class="hati-bg" style="left:5%;font-size:30px;animation-duration:4s">❤️</span>
+<span class="hati-bg" style="left:25%;font-size:40px;animation-duration:5s">💕</span>
+<span class="hati-bg" style="left:45%;font-size:35px;animation-duration:4.5s">💘</span>
+<span class="hati-bg" style="left:65%;font-size:45px;animation-duration:5.5s">❤️</span>
+<span class="hati-bg" style="left:85%;font-size:32px;animation-duration:6s">💞</span>
+<div class="card" id="utama">
+<span class="stiker stiker1">❤️</span><span class="stiker stiker2">💖</span><span class="stiker stiker3">💕</span><span class="stiker stiker4">💘</span>
+<button class="tombol-musik" id="btnMusik" onclick="putarLagu()">🎵 Pencet Buat Muter Lagu Perempuanku 🎵</button>
+<div class="lirik">"Kaulah perempuanku, yang selalu ku rindu..." 🎶</div>
+<div style="font-size:60px">🥺👉👈 ❤️</div>
+<div style="font-size:25px">❤️💖💕💘💗💓💞💝❤️</div>
+<h1>Hai Nda...<br>Mau ga jadi pacar aku nda? ❤️</h1>
+<p>Tiap chat sama nda, aku selalu senyum-senyum sendiri.<br>Tiap nda bales chat, rasanya deg-degan. 💓<br><br>Jadi... <b>Mau ga jadi pacar aku nda?</b><br>Aku janji bakal jaga nda baik-baik. 🫶</p><br>
+<button class="btn" id="yes" onclick="diterima()">MAU 😍❤️</button>
+<button class="btn" id="no" onmouseover="kabur()" onclick="kabur()">NGGAK 🙄</button>
+<p style="font-size:12px;color:#aaa;margin-top:15px">❤️ - Dari SABIK Buat Nda - Perempuanku - ❤️</p>
 </div>
-<div class="container">
-<h2>Perkenalan <span>Diri Saya</span></h2>
-<div class="card">Perkenalkan, nama saya adalah <b>SABIK</b>. Saya berasal dari Banyuresmi, Kabupaten Garut, Jawa Barat. Saya adalah seseorang yang memiliki ketertarikan yang sangat besar dan mendalam terhadap dunia <b>Teknologi Informasi atau yang biasa dikenal dengan IT</b>.<br><br>Bagi sebagian orang, IT mungkin hanya sekadar tentang komputer, HP, dan internet. Tetapi bagi saya, IT adalah sebuah dunia yang sangat luas, penuh dengan ilmu pengetahuan, logika, kreativitas, dan juga peluang yang tidak terbatas. Sejak pertama kali saya mengenal komputer dan internet, saya langsung merasa bahwa inilah bidang yang benar-benar saya sukai dan ingin saya tekuni secara serius.<br><br>Saya percaya bahwa di zaman sekarang ini, hampir semua aspek kehidupan manusia sudah tidak bisa lepas dari teknologi. Oleh karena itu, seseorang yang menguasai IT akan memiliki nilai lebih dan akan sangat dibutuhkan di masa depan. Dan saya ingin menjadi salah satu orang tersebut.</div>
-
-<h2>Penjelasan Lengkap: Kenapa Saya Ahli Di Bidang <span>IT?</span></h2>
-<div class="card">
-<h3>1. Ahli Dalam Membuat Website (Web Development)</h3>
-Salah satu keahlian utama saya adalah dalam bidang pembuatan website. Saya menguasai <b>HTML, CSS, dan JavaScript</b>. Saya mampu membuat website perkenalan diri, website portofolio, website untuk jualan online, website untuk sekolah, website untuk usaha, website undangan digital, dan website company profile yang modern, cepat, dan bisa dibuka di HP.
-<h3>2. Ahli Dalam Troubleshooting</h3>
-Saya terbiasa mengatasi HP lemot, memori penuh, aplikasi error, laptop error, terkena virus, WiFi bermasalah, dan printer bermasalah. Saya menganalisis dulu penyebabnya, lalu menemukan solusi yang paling tepat dan aman tanpa merusak data.
-<h3>3. Ahli Dalam Keamanan Digital & Akun</h3>
-Saya memahami cara kerja verifikasi dua langkah, cara membuat kata sandi yang kuat, cara mengenali link phishing, cara mengembalikan akun yang diretas, dan cara menjaga privasi agar tidak disalahgunakan.
-<h3>4. Ahli Aplikasi & Perangkat Digital</h3>
-Saya mahir Microsoft Word, Excel, PowerPoint, Google Docs, Sheets, Drive, Canva, CapCut, dan pengelolaan HP Android & iPhone secara maksimal.
-<h3>5. Selalu Belajar Teknologi Terbaru Termasuk AI</h3>
-Saat ini saya sedang mempelajari <b>Artificial Intelligence (AI)</b> dan cara memanfaatkannya untuk membantu pekerjaan manusia menjadi lebih mudah dan lebih cepat.
+<div class="card" id="hasil">
+<span class="stiker stiker1">❤️</span><span class="stiker stiker2">💖</span><span class="stiker stiker3">🥰</span><span class="stiker stiker4">😍</span>
+<div class="hati-besar">❤️</div>
+<div style="font-size:30px">💖💕💘💗💓💞💝❤️</div>
+<h1>YEEEAYY!!<br>Nda MAU!! 🥰</h1>
+<div class="lirik">"Kaulah perempuanku, yang selalu ku rindu..."<br>"Dan kaulah yang ku mau..." 🎶❤️</div>
+<p>Makasih ya nda udah mau jadi pacar aku...<br>Mulai hari ini, nda resmi jadi <b>PEREMPUANKU</b>! 😘<br><br>Aku sayang nda ❤️❤️❤️<br>Screenshot ini kirim ke aku ya!</p><br>
+<button class="tombol-musik muter" onclick="putarLagu()">🎵 Perempuanku - Lagi Muter ❤️ 🎵</button><br>
+<a href="https://wa.me/6283196768527?text=Nda%20MAU%20jadi%20pacar%20kamu%20❤️%20Kaulah%20perempuanku" style="display:inline-block;background:#25D366;color:white;padding:15px 25px;border-radius:50px;font-weight:bold;text-decoration:none">💬 Chat Aku Sekarang! 💖</a>
 </div>
-
-<h2>Pengalaman & Project <span>Saya</span></h2>
-<div class="card"><span class="tag">PROJECT 1</span><h3>🌐 Website Perkenalan Diri & Portofolio</h3>Membuat website perkenalan diri modern dan responsif dari nol menggunakan HTML, CSS, dan JavaScript.</div>
-<div class="card"><span class="tag">PROJECT 2</span><h3>🛒 Website Jualan / Katalog Online</h3>Membantu pelaku usaha kecil di Banyuresmi, Garut membuatkan katalog online dengan foto produk, harga, dan tombol WhatsApp otomatis agar pembeli bisa langsung order.</div>
-<div class="card"><span class="tag">PROJECT 3</span><h3>🔐 Jasa Pengamanan & Pemulihan Akun</h3>Membantu mengamankan akun Instagram, WhatsApp, dan Google yang lupa password, kena hack, dan tidak bisa login. Lebih dari 10 akun berhasil dikembalikan dengan aman.</div>
-<div class="card"><span class="tag">PROJECT 4</span><h3>📱 Jasa Perbaikan HP & Laptop</h3>Membantu tetangga dan teman memperbaiki HP lemot, memori penuh, virus, dan laptop error tanpa harus ke tempat service yang mahal.</div>
-<div class="card"><span class="tag">PROJECT 5</span><h3>🎨 Desain Poster, Edit Foto & Video</h3>Membuat desain poster promosi, edit foto profil, dan edit video untuk TikTok dan Instagram menggunakan Canva dan CapCut.</div>
-<div class="card"><span class="tag">PROJECT 6</span><h3>💡 Belajar AI & Coding</h3>Sedang aktif belajar coding lebih dalam dan memanfaatkan AI untuk membuat website, mencari ide, dan menyelesaikan masalah IT lebih cepat.</div>
-
-<h2>Skill <span>Saya</span></h2>
-<div class="card">HTML & CSS <div class="bar"><div style="width:95%"></div></div>JavaScript <div class="bar"><div style="width:85%"></div></div>Web Design <div class="bar"><div style="width:90%"></div></div>Perbaikan HP & Komputer <div class="bar"><div style="width:92%"></div></div>Keamanan Akun <div class="bar"><div style="width:88%"></div></div>Office & Google <div class="bar"><div style="width:95%"></div></div>Editing & Desain <div class="bar"><div style="width:87%"></div></div>AI Untuk Kerja <div class="bar"><div style="width:90%"></div></div></div>
-
-<h2>Visi & Misi <span>Saya</span></h2>
-<div class="card"><b>🎯 VISI SAYA</b><br>"Menjadi seorang ahli IT yang profesional, terpercaya, dan bermanfaat bagi banyak orang. Saya ingin membuktikan bahwa anak muda dari Banyuresmi, Garut juga mampu bersaing, berkarya, dan sukses di dunia teknologi digital."<br><br><b>🚀 MISI SAYA</b><br><br><b>1. Membantu Sesama Melalui Teknologi</b> - Membantu masyarakat, teman, pelajar, dan pelaku usaha agar tidak tertinggal teknologi.<br><br><b>2. Terus Belajar & Berkembang</b> - Terus belajar Web Development, Keamanan Digital, dan AI agar tidak ketinggalan zaman.<br><br><b>3. Bekerja Jujur, Teliti & Bertanggung Jawab</b> - Setiap pekerjaan dikerjakan jujur, teliti, tepat waktu, dan penuh tanggung jawab.<br><br><b>4. Menginspirasi Anak Muda Garut</b> - Menjadi contoh bahwa keterbatasan bukan alasan untuk berhenti bermimpi.<br><br><b>5. Membangun Karir & Usaha Di Bidang IT</b> - Cita-cita membangun usaha jasa IT dan pembuatan website sendiri.<div class="quote"><i>"Teknologi yang hebat bukan hanya tentang seberapa canggih alatnya, tetapi tentang seberapa besar manfaatnya bagi orang lain."</i><br><br><b>- SABIK -</b></div></div>
-<div style="text-align:center;margin-top:30px"><a class="btn btn-hijau" href="https://wa.me/6283196768527?text=Halo%20SABIK%2C%20saya%20mau%20buat%20website!" style="font-size:18px;padding:16px 32px">🚀 MAU BUAT WEBSITE? CHAT SAYA SEKARANG!</a><p style="color:#aaa;margin-top:15px">WA: 0831-9676-8527 • Respon cepat • Harga bersahabat</p></div>
-</div>
-<div class="footer">Dibuat dengan ❤️ oleh <b>SABIK</b><br>© 2026 Sabik - Banyuresmi, Garut | IT Expert & Web Developer<br>WA: 0831-9676-8527</div>
+<script>
+let laguMuter=false;
+function putarLagu(){var lagu=document.getElementById('lagu');var btn=document.getElementById('btnMusik');if(!laguMuter){lagu.play().catch(()=>{alert('Upload dulu file perempuanku.mp3 ke GitHub kamu ya!');});laguMuter=true;if(btn)btn.innerHTML='🎵 Perempuanku - Lagi Muter... ❤️ 🎵';}else{lagu.pause();laguMuter=false;if(btn)btn.innerHTML='🎵 Pencet Buat Muter Lagu Perempuanku 🎵';}}
+function kabur(){var t=document.getElementById('no');var x=Math.random()*220-110;var y=Math.random()*120-60;t.style.transform='translate('+x+'px,'+y+'px)';t.innerHTML=['Yakin nda? 🥺','Coba lagi deh 😝','Eh gak kena! 😜','Yah gagal 😂','Pencet MAU aja nda! ❤️','Ih nda mah 😭'][Math.floor(Math.random()*6)];}
+function diterima(){var lagu=document.getElementById('lagu');lagu.play().catch(()=>{});laguMuter=true;document.getElementById('body').classList.add('goyang-heboh');document.getElementById('hasil').classList.add('geter');if(navigator.vibrate){navigator.vibrate([200,100,200,100,500,100,500]);}document.getElementById('utama').style.display='none';document.getElementById('hasil').style.display='block';for(let i=0;i<150;i++){setTimeout(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕','💘','💗','💓','💞','💝','🥰','😍','💋'][Math.floor(Math.random()*11)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.top='-40px';h.style.fontSize=(Math.random()*40+25)+'px';h.style.transition='top 2.5s ease-in';h.style.zIndex='99';document.body.appendChild(h);setTimeout(()=>{h.style.top='105vh'},50);setTimeout(()=>{h.remove()},3500);},i*20);}setTimeout(()=>{document.getElementById('body').classList.remove('goyang-heboh');},2500);}
+setInterval(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕'][Math.floor(Math.random()*3)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.bottom='-20px';h.style.fontSize=(Math.random()*25+15)+'px';h.style.transition='bottom 4s';h.style.zIndex='1';document.body.appendChild(h);setTimeout(()=>{h.style.bottom='100vh'},100);setTimeout(()=>{h.remove()},4500);},800);
+</script>
 </body>
 </html>
