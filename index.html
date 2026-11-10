@@ -30,26 +30,26 @@ p{color:#555;line-height:1.7}
 .stiker2{top:-15px;right:-10px;animation-delay:0.5s}
 .stiker3{bottom:-15px;left:20px;animation-delay:0.3s}
 .stiker4{bottom:-15px;right:20px;animation-delay:0.8s}
+.stiker5{top:50%;left:-25px;animation-delay:0.2s}
+.stiker6{top:50%;right:-25px;animation-delay:0.6s}
+.kata-love{font-size:22px;animation:kedip 1.2s infinite;display:inline-block}
 .tombol-musik{background:#ffe3ec;color:#ff4d6d;border:2px solid #ff4d6d;padding:12px 20px;border-radius:50px;font-weight:bold;cursor:pointer;margin-bottom:10px;width:100%}
 .tombol-musik.muter{animation:degup 0.8s infinite}
 .lirik{font-style:italic;color:#ff4d6d;font-size:14px;margin:10px 0}
 </style>
 </head>
 <body id="body">
-<audio id="lagu" loop preload="auto">
-<source src="perempuanku.mp3" type="audio/mpeg">
-<source src="lagu.mp3" type="audio/mpeg">
-</audio>
+<audio id="lagu" loop preload="auto"><source src="perempuanku.mp3" type="audio/mpeg"></audio>
 <span class="hati-bg" style="left:5%;font-size:30px;animation-duration:4s">❤️</span>
 <span class="hati-bg" style="left:25%;font-size:40px;animation-duration:5s">💕</span>
 <span class="hati-bg" style="left:45%;font-size:35px;animation-duration:4.5s">💘</span>
 <span class="hati-bg" style="left:65%;font-size:45px;animation-duration:5.5s">❤️</span>
 <span class="hati-bg" style="left:85%;font-size:32px;animation-duration:6s">💞</span>
 <div class="card" id="utama">
-<span class="stiker stiker1">❤️</span><span class="stiker stiker2">💖</span><span class="stiker stiker3">💕</span><span class="stiker stiker4">💘</span>
+<span class="stiker stiker1">❤️</span><span class="stiker stiker2">💖</span><span class="stiker stiker3">💕</span><span class="stiker stiker4">💘</span><span class="stiker stiker5">🥰</span><span class="stiker stiker6">😍</span>
 <button class="tombol-musik" id="btnMusik" onclick="putarLagu()">🎵 Pencet Buat Muter Lagu Perempuanku 🎵</button>
 <div class="lirik">"Kaulah perempuanku, yang selalu ku rindu..." 🎶</div>
-<div style="font-size:60px">🥺👉👈 ❤️</div>
+<div style="font-size:60px">🥺👉👈 <span class="kata-love">❤️</span></div>
 <div style="font-size:25px">❤️💖💕💘💗💓💞💝❤️</div>
 <h1>Hai Nda...<br>Mau ga jadi pacar aku nda? ❤️</h1>
 <p>Tiap chat sama nda, aku selalu senyum-senyum sendiri.<br>Tiap nda bales chat, rasanya deg-degan. 💓<br><br>Jadi... <b>Mau ga jadi pacar aku nda?</b><br>Aku janji bakal jaga nda baik-baik. 🫶</p><br>
@@ -62,15 +62,14 @@ p{color:#555;line-height:1.7}
 <div class="hati-besar">❤️</div>
 <div style="font-size:30px">💖💕💘💗💓💞💝❤️</div>
 <h1>YEEEAYY!!<br>Nda MAU!! 🥰</h1>
-<div class="lirik">"Kaulah perempuanku, yang selalu ku rindu..."<br>"Dan kaulah yang ku mau..." 🎶❤️</div>
-<p>Makasih ya nda udah mau jadi pacar aku...<br>kiwww
-  <b>PEREMPUANKU</b>! 😘<br><br>Aku sayang nda ❤️❤️❤️<br>Screenshot ini kirim ke aku ya!</p><br>
+<div class="lirik">"kacawwww, demmm jadian nicc."<br>"Dan kaulah yang ku mau..." 🎶❤️</div>
+<p>Makasih ya nda udah mau jadi pacar aku...<br>Mulai hari ini, nda resmi jadi <b>PEREMPUANKU</b>! 😘<br><br>Aku sayang nda ❤️❤️❤️<br>Screenshot ini kirim ke aku ya!</p><br>
 <button class="tombol-musik muter" onclick="putarLagu()">🎵 Perempuanku - Lagi Muter ❤️ 🎵</button><br>
 <a href="https://wa.me/6283196768527?text=Nda%20MAU%20jadi%20pacar%20kamu%20❤️%20Kaulah%20perempuanku" style="display:inline-block;background:#25D366;color:white;padding:15px 25px;border-radius:50px;font-weight:bold;text-decoration:none">💬 Chat Aku Sekarang! 💖</a>
 </div>
 <script>
 let laguMuter=false;
-function putarLagu(){var lagu=document.getElementById('lagu');var btn=document.getElementById('btnMusik');if(!laguMuter){lagu.play().catch(()=>{alert('Upload dulu file perempuanku.mp3 ke GitHub kamu ya!');});laguMuter=true;if(btn)btn.innerHTML='🎵 Perempuanku - Lagi Muter... ❤️ 🎵';}else{lagu.pause();laguMuter=false;if(btn)btn.innerHTML='🎵 Pencet Buat Muter Lagu Perempuanku 🎵';}}
+function putarLagu(){var lagu=document.getElementById('lagu');var btn=document.getElementById('btnMusik');if(!laguMuter){lagu.play().catch(()=>{alert('Upload dulu file perempuanku.mp3 ke GitHub ya!');});laguMuter=true;if(btn)btn.innerHTML='🎵 Perempuanku - Lagi Muter... ❤️ 🎵';}else{lagu.pause();laguMuter=false;if(btn)btn.innerHTML='🎵 Pencet Buat Muter Lagu Perempuanku 🎵';}}
 function kabur(){var t=document.getElementById('no');var x=Math.random()*220-110;var y=Math.random()*120-60;t.style.transform='translate('+x+'px,'+y+'px)';t.innerHTML=['Yakin nda? 🥺','Coba lagi deh 😝','Eh gak kena! 😜','Yah gagal 😂','Pencet MAU aja nda! ❤️','Ih nda mah 😭'][Math.floor(Math.random()*6)];}
 function diterima(){var lagu=document.getElementById('lagu');lagu.play().catch(()=>{});laguMuter=true;document.getElementById('body').classList.add('goyang-heboh');document.getElementById('hasil').classList.add('geter');if(navigator.vibrate){navigator.vibrate([200,100,200,100,500,100,500]);}document.getElementById('utama').style.display='none';document.getElementById('hasil').style.display='block';for(let i=0;i<150;i++){setTimeout(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕','💘','💗','💓','💞','💝','🥰','😍','💋'][Math.floor(Math.random()*11)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.top='-40px';h.style.fontSize=(Math.random()*40+25)+'px';h.style.transition='top 2.5s ease-in';h.style.zIndex='99';document.body.appendChild(h);setTimeout(()=>{h.style.top='105vh'},50);setTimeout(()=>{h.remove()},3500);},i*20);}setTimeout(()=>{document.getElementById('body').classList.remove('goyang-heboh');},2500);}
 setInterval(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕'][Math.floor(Math.random()*3)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.bottom='-20px';h.style.fontSize=(Math.random()*25+15)+'px';h.style.transition='bottom 4s';h.style.zIndex='1';document.body.appendChild(h);setTimeout(()=>{h.style.bottom='100vh'},100);setTimeout(()=>{h.remove()},4500);},800);
