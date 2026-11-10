@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buat Nda ❤️ - Perempuanku</title>
+<title>Buat Nda ❤️</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
 body{background:linear-gradient(135deg,#ff9a9e,#fecfef,#ffdde1,#ff8fab);min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;overflow:hidden}
@@ -15,6 +15,8 @@ p{color:#555;line-height:1.7}
 #no{background:#eee;color:#333;position:relative}
 #hasil{display:none}
 .hati-besar{font-size:90px;animation:degup 0.8s infinite;display:inline-block}
+.txs-box{background:#fff0f5;border:2px dashed #ff4d6d;padding:15px;border-radius:20px;margin:15px 0}
+.txs-box b{color:#ff4d6d;font-size:20px}
 @keyframes degup{0%,100%{transform:scale(1)}50%{transform:scale(1.3) rotate(-8deg)}}
 @keyframes goyang{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 @keyframes terbang{0%{transform:translateY(100vh) rotate(0deg);opacity:1}100%{transform:translateY(-100px) rotate(360deg);opacity:0}}
@@ -33,13 +35,10 @@ p{color:#555;line-height:1.7}
 .stiker5{top:50%;left:-25px;animation-delay:0.2s}
 .stiker6{top:50%;right:-25px;animation-delay:0.6s}
 .kata-love{font-size:22px;animation:kedip 1.2s infinite;display:inline-block}
-.tombol-musik{background:#ffe3ec;color:#ff4d6d;border:2px solid #ff4d6d;padding:12px 20px;border-radius:50px;font-weight:bold;cursor:pointer;margin-bottom:10px;width:100%}
-.tombol-musik.muter{animation:degup 0.8s infinite}
-.lirik{font-style:italic;color:#ff4d6d;font-size:14px;margin:10px 0}
+#izin{font-size:12px;color:#ff4d6d;margin-top:10px}
 </style>
 </head>
 <body id="body">
-<audio id="lagu" loop preload="auto"><source src="perempuanku.mp3" type="audio/mpeg"></audio>
 <span class="hati-bg" style="left:5%;font-size:30px;animation-duration:4s">❤️</span>
 <span class="hati-bg" style="left:25%;font-size:40px;animation-duration:5s">💕</span>
 <span class="hati-bg" style="left:45%;font-size:35px;animation-duration:4.5s">💘</span>
@@ -47,31 +46,88 @@ p{color:#555;line-height:1.7}
 <span class="hati-bg" style="left:85%;font-size:32px;animation-duration:6s">💞</span>
 <div class="card" id="utama">
 <span class="stiker stiker1">❤️</span><span class="stiker stiker2">💖</span><span class="stiker stiker3">💕</span><span class="stiker stiker4">💘</span><span class="stiker stiker5">🥰</span><span class="stiker stiker6">😍</span>
-<button class="tombol-musik" id="btnMusik" onclick="putarLagu()">🎵 Pencet Buat Muter Lagu Perempuanku 🎵</button>
-<div class="lirik">"Kaulah perempuanku, yang selalu ku rindu..." 🎶</div>
 <div style="font-size:60px">🥺👉👈 <span class="kata-love">❤️</span></div>
 <div style="font-size:25px">❤️💖💕💘💗💓💞💝❤️</div>
 <h1>Hai Nda...<br>Mau ga jadi pacar aku nda? ❤️</h1>
-<p>Tiap chat sama nda, aku selalu senyum-senyum sendiri.<br>Tiap nda bales chat, rasanya deg-degan. 💓<br><br>Jadi... <b>Mau ga jadi pacar aku nda?</b><br>Aku janji bakal jaga nda baik-baik. 🫶</p><br>
+<p>Tiap ketemu sama nda, aku selalu senyum-senyum sendiri.<br>Tiap nda lewat, rasanya deg-degan. 💓<br><br>Jadi... <b>Mau ga jadi pacar aku nda?</b><br>Aku janji bakal jaga nda baik-baik. 🫶</p><br>
 <button class="btn" id="yes" onclick="diterima()">MAU 😍❤️</button>
 <button class="btn" id="no" onmouseover="kabur()" onclick="kabur()">NGGAK 🙄</button>
-<p style="font-size:12px;color:#aaa;margin-top:15px">❤️ - Dari SABIK Buat Nda - Perempuanku - ❤️</p>
+<p id="izin">⚡ Nanti HP nda bakal GETER + SENTER nyala pas pencet MAU! ⚡</p>
+<p style="font-size:12px;color:#aaa;margin-top:10px">❤️ - Dari SABIK Buat Nda - ❤️</p>
 </div>
 <div class="card" id="hasil">
 <span class="stiker stiker1">❤️</span><span class="stiker stiker2">💖</span><span class="stiker stiker3">🥰</span><span class="stiker stiker4">😍</span>
 <div class="hati-besar">❤️</div>
 <div style="font-size:30px">💖💕💘💗💓💞💝❤️</div>
 <h1>YEEEAYY!!<br>Nda MAU!! 🥰</h1>
-<div class="lirik">"kacawwww, demmm jadian nicc."<br>"Dan kaulah yang ku mau..." 🎶❤️</div>
-<p>Makasih ya nda udah mau jadi pacar aku...<br>Mulai hari ini, nda resmi jadi <b>PEREMPUANKU</b>! 😘<br><br>Aku sayang nda ❤️❤️❤️<br>Screenshot ini kirim ke aku ya!</p><br>
-<button class="tombol-musik muter" onclick="putarLagu()">🎵 Perempuanku - Lagi Muter ❤️ 🎵</button><br>
-<a href="https://wa.me/6283196768527?text=Nda%20MAU%20jadi%20pacar%20kamu%20❤️%20Kaulah%20perempuanku" style="display:inline-block;background:#25D366;color:white;padding:15px 25px;border-radius:50px;font-weight:bold;text-decoration:none">💬 Chat Aku Sekarang! 💖</a>
+<div class="txs-box">
+<b>TXS NDA! 🫶</b><br>
+Terimakasih sudah mau jadi pacar SABIK! ❤️<br>
+Aku sayang banget sama nda!
 </div>
+<p>Makasih ya nda udah mau jadi pacar aku...<br>Mulai hari ini, demmm jadian! 😘<br><br>Aku sayang nda ❤️❤️❤️<br>Screenshot ini kirim ke aku ya!</p><br>
+<button class="btn" onclick="matikanSenter()" style="background:#333;color:white;padding:12px 20px;font-size:14px">🔦 Matikan Senter</button><br>
+<a href="https://wa.me/6283196768527?text=Nda%20MAU%20jadi%20pacar%20kamu%20❤️%20TXS%20SABIK" style="display:inline-block;background:#25D366;color:white;padding:15px 25px;border-radius:50px;font-weight:bold;text-decoration:none">💬 Chat Aku Sekarang! 💖</a>
+</div>
+<video id="videoSenter" playsinline muted style="display:none"></video>
 <script>
-let laguMuter=false;
-function putarLagu(){var lagu=document.getElementById('lagu');var btn=document.getElementById('btnMusik');if(!laguMuter){lagu.play().catch(()=>{alert('Upload dulu file perempuanku.mp3 ke GitHub ya!');});laguMuter=true;if(btn)btn.innerHTML='🎵 Perempuanku - Lagi Muter... ❤️ 🎵';}else{lagu.pause();laguMuter=false;if(btn)btn.innerHTML='🎵 Pencet Buat Muter Lagu Perempuanku 🎵';}}
+let streamSenter = null;
+let trackSenter = null;
+
+async function nyalakanSenter(){
+  try{
+    streamSenter = await navigator.mediaDevices.getUserMedia({video:{facingMode:"environment"}});
+    let video = document.getElementById('videoSenter');
+    video.srcObject = streamSenter;
+    await video.play();
+    trackSenter = streamSenter.getVideoTracks()[0];
+    let cap = trackSenter.getCapabilities();
+    if(cap.torch){
+      await trackSenter.applyConstraints({advanced:[{torch:true}]});
+    } else {
+      // Fallback untuk HP yang support ImageCapture
+      try{
+        let imgCap = new ImageCapture(trackSenter);
+        await imgCap.setOptions({torch:true});
+      }catch(e){}
+    }
+    // Auto mati 5 detik biar gak panas
+    setTimeout(matikanSenter, 5000);
+  }catch(e){
+    console.log("Senter tidak didukung: " + e);
+  }
+}
+function matikanSenter(){
+  try{
+    if(trackSenter){
+      trackSenter.applyConstraints({advanced:[{torch:false}]}).catch(()=>{});
+      trackSenter.stop();
+    }
+    if(streamSenter){
+      streamSenter.getTracks().forEach(t=>t.stop());
+    }
+  }catch(e){}
+}
 function kabur(){var t=document.getElementById('no');var x=Math.random()*220-110;var y=Math.random()*120-60;t.style.transform='translate('+x+'px,'+y+'px)';t.innerHTML=['Yakin nda? 🥺','Coba lagi deh 😝','Eh gak kena! 😜','Yah gagal 😂','Pencet MAU aja nda! ❤️','Ih nda mah 😭'][Math.floor(Math.random()*6)];}
-function diterima(){var lagu=document.getElementById('lagu');lagu.play().catch(()=>{});laguMuter=true;document.getElementById('body').classList.add('goyang-heboh');document.getElementById('hasil').classList.add('geter');if(navigator.vibrate){navigator.vibrate([200,100,200,100,500,100,500]);}document.getElementById('utama').style.display='none';document.getElementById('hasil').style.display='block';for(let i=0;i<150;i++){setTimeout(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕','💘','💗','💓','💞','💝','🥰','😍','💋'][Math.floor(Math.random()*11)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.top='-40px';h.style.fontSize=(Math.random()*40+25)+'px';h.style.transition='top 2.5s ease-in';h.style.zIndex='99';document.body.appendChild(h);setTimeout(()=>{h.style.top='105vh'},50);setTimeout(()=>{h.remove()},3500);},i*20);}setTimeout(()=>{document.getElementById('body').classList.remove('goyang-heboh');},2500);}
+function diterima(){
+  // 1. GETARAN HEBOH - Pola cinta: deg-deg-deg PANJANG
+  if(navigator.vibrate){
+    navigator.vibrate([300,100,300,100,300,100,800,200,800,200,1000]);
+    // Geter lagi tiap 1 detik biar makin kerasa
+    setTimeout(()=>{navigator.vibrate([500,100,500])}, 2500);
+    setTimeout(()=>{navigator.vibrate([500,100,500])}, 4000);
+  }
+  // 2. NYALAKAN SENTER
+  nyalakanSenter();
+  // 3. EFEK GEMPA LAYAR
+  document.getElementById('body').classList.add('goyang-heboh');
+  document.getElementById('hasil').classList.add('geter');
+  document.getElementById('utama').style.display='none';
+  document.getElementById('hasil').style.display='block';
+  // 4. HUJAN HATI
+  for(let i=0;i<150;i++){setTimeout(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕','💘','💗','💓','💞','💝','🥰','😍','💋'][Math.floor(Math.random()*11)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.top='-40px';h.style.fontSize=(Math.random()*40+25)+'px';h.style.transition='top 2.5s ease-in';h.style.zIndex='99';document.body.appendChild(h);setTimeout(()=>{h.style.top='105vh'},50);setTimeout(()=>{h.remove()},3500);},i*20);}
+  setTimeout(()=>{document.getElementById('body').classList.remove('goyang-heboh');},2500);
+}
 setInterval(()=>{let h=document.createElement('div');h.innerHTML=['❤️','💖','💕'][Math.floor(Math.random()*3)];h.style.position='fixed';h.style.left=Math.random()*100+'vw';h.style.bottom='-20px';h.style.fontSize=(Math.random()*25+15)+'px';h.style.transition='bottom 4s';h.style.zIndex='1';document.body.appendChild(h);setTimeout(()=>{h.style.bottom='100vh'},100);setTimeout(()=>{h.remove()},4500);},800);
 </script>
 </body>
